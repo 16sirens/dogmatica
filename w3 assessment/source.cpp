@@ -7,20 +7,30 @@ int main() {
 	cout << "enter height: ";
 	cin >> n;
 	cout << endl;
-	// for loop to uh... tbc
-	for (; n >= 1; n--) {
-		for (int x = n; x >= 2; x--) {
+
+
+	for (;n >= 0;n--){
+		int counter = 1;
+		int number = 1;
+		for (int i = 1; i <= n; i++) {
 			cout << " ";
 		}
-		int i = 1;
-		while (i <= n) {
-			cout << i;
-			if (i <= n) {
-				i++;
+		while (number > 0) {
+
+			if (number < counter) {
+				cout << number;
+				number++;
+			}
+			else if (number == counter) {
+				cout << number;
+				number--;
+
 			}
 		}
+
+		counter += 1;
 		cout << endl;
 	}
-	cout << "hep";
+
 	return 0;
 }
