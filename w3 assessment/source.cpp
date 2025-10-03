@@ -32,14 +32,16 @@ int main() {
 		}
 
 		int num = 1;
-		//trying to make the pyramid sob
+		//one gazillion breakpoints later! it works!
+		bool mid = false;
 		for (int whatever = 1; whatever <= iRow * 2 - 1; whatever++) {
 			
 			cout << num;
-			if (num < iRow) {
+			if (num < iRow && !mid) {
 				num++;
 			}
-			else if (num >= iRow) {
+			else if (num >= iRow || mid) {
+				mid = true;
 				num--;
 			}
 		}
