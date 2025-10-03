@@ -31,9 +31,10 @@ int main() {
 			cout << " ";
 		}
 
+		int num = 1;
 		//trying to make the pyramid sob
 		for (int whatever = 1; whatever <= iRow * 2 - 1; whatever++) {
-			int num = 1;
+			
 			cout << num;
 			if (num < iRow) {
 				num++;
@@ -42,8 +43,6 @@ int main() {
 				num--;
 			}
 		}
-
-
 		cout << endl;
 	}
 	return 0;	
