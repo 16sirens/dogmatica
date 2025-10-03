@@ -3,48 +3,48 @@ using namespace std;
 
 int main() {
 	// initialise n and ask for height of pyramid
-	int n = 0;
+	int height = 0;
 	bool goodInput = false;
 
 	cout << "enter height: ";
-	cin >> n;
+	cin >> height;
 	cout << endl;
 
-	// input validation
+	// input validation - doesnt like characters or big numbers
 	while (goodInput == false) {
 
-		if (n >= 1 && n <= 9) {
+		if (height >= 1 && height <= 9) {
 			goodInput = true;
 		}
 		else {
 			cout << "Please enter a valid height (1-9): ";
-			cin >> n;
+			cin >> height;
 			cout << endl;
 		}
 	}
 
-	for (; n >= 0; n--) {
-		int counter = 1;
-		int number = 1;
-		for (int i = 1; i <= n; i++) {
+	// for loop to cycle through each rows
+	for (int iRow = 1; iRow <= height; iRow++) {
+
+		// for loop for the spaces in each row
+		for (int space = 1; space <= height - iRow; space++) {
 			cout << " ";
 		}
-		while (number > 0) {
 
-			if (number < counter) {
-				cout << number;
-				number++;
+		//trying to make the pyramid sob
+		for (int whatever = 1; whatever <= iRow * 2 - 1; whatever++) {
+			int num = 1;
+			cout << num;
+			if (num < iRow) {
+				num++;
 			}
-			else if (number == counter) {
-				cout << number;
-				number--;
-
+			else if (num >= iRow) {
+				num--;
 			}
 		}
 
-		counter += 1;
+
 		cout << endl;
 	}
-
-	return 0;
+	return 0;	
 }
