@@ -1,0 +1,4 @@
+﻿  FileName.cpp
+E:\dogmatica\w6\bit twiddling\bit twiddling\FileName.cpp(10,13): warning C4309: 'initializing': truncation of constant value
+E:\dogmatica\w6\bit twiddling\bit twiddling\FileName.cpp(20,18): warning C4309: 'initializing': truncation of constant value
+  bit twiddling.vcxproj -> E:\dogmatica\w6\bit twiddling\x64\Debug\bit twiddling.exe

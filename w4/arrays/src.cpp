@@ -23,8 +23,8 @@ int main() {
 	for (int i = 0; i < 5; i++) {
 
 		if (pickupName == customers[0][i]) {
-			std::cout<< customers[0][i] << " is picking up " << customers[1][i] << " shirts.";
-			customers[1][i] += "- Picked up";
+			std::cout<< customers[0][i] << " is picking up " << customers[1][i] << " shirts.\n";
+			customers[1][i] += " - Picked up";
 			std::cout << customers[1][i];
 		}
 	}
