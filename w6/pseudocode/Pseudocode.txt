@@ -1,0 +1,36 @@
+No guidelines for pseudocode have been given, hence I am following my own.
+Task brief was very vague, hence many assumptions have been made
+We assume the robot can figure out when the end of the street/footpath is
+We assume the robot knows the names of the street
+We assume the robot can look left and right to check for any vehicles on the road
+We assume the robot can navigate the footpath and navigate itself to the crossing if there is one, if not we assume it can mount and dismount the footpath.
+
+
+
+
+1. Initialise time, location
+2. Check Current Time
+2.1 If time is between 9AM and 6PM
+2.2 Continue
+2.3 If time is NOT between 9AM and 6PM
+2.4 Repeat
+3. Follow footpath west to the end of Bell St
+4. Follow the footpath down Constitution Road
+5. While at junction
+5.1 If Right AND Left is clear
+5.2 Cross road to Barrack Street
+5.3 Else
+5.4 Wait 5 seconds
+5.5 Repeat
+6. Follow the footpath down Barrack Street
+7. While at junction
+7.1 If Right AND Left is clear
+77.2 Cross road and follow path into Overgate
+7.3 Else
+7.4 Wait 5 seconds
+7.5 Repeat
+8. If inside Overgate
+8.1 Go west till end
+8.2 Else go straight
+8.3 Repeat
+9. Stop infront of Frasers
